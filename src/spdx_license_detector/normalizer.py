@@ -85,3 +85,8 @@ class LicenseNormalizer:
         if len(tokens) < n:
             return {tuple(tokens)} if tokens else set()
         return {tuple(tokens[i : i + n]) for i in range(len(tokens) - n + 1)}
+
+
+def normalize_spdx_id(spdx_id: str) -> str:
+    """Returns canonical formatted uppercase SPDX license identifier."""
+    return spdx_id.strip().upper()

@@ -1,0 +1,5 @@
+feat(normalizer): add canonical normalize_spdx_id helper
+
+Add helper to standardize case and formatting of SPDX license identifiers.
+
+Co-authored-by: Stephen Cork <stephencork81@gmail.com>
